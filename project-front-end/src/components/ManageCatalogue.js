@@ -12,7 +12,7 @@ const ManageCatalogue = () => {
             return
         }
         const headers = new Headers();
-        headers.append("Content-type", "application/json")
+        headers.append("Content-Type", "application/json")
         headers.append("Authorization", "Bearer " + jwtToken)
 
         const requestOptions = {
@@ -41,7 +41,7 @@ const ManageCatalogue = () => {
                 <thead>
                 <tr>
                     <th>Movie</th>
-                    <th>Release data</th>
+                    <th>Release date</th>
                     <th>Rating</th>
                 </tr>
                 </thead>
@@ -49,7 +49,7 @@ const ManageCatalogue = () => {
                 {movies.map((m) => (
                     <tr key={m.id}>
                         <td>
-                            <Link to={`/admin/movies/${m.id}`}>
+                            <Link to={`/admin/movie/${m.id}`}>
                                 {m.title}
                             </Link>
                         </td>

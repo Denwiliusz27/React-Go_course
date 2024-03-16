@@ -24,10 +24,10 @@ const Login = () => {
         const requestOptions = {
             method: "POST",
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'application/json'
             },
             credentials: 'include',
-            body: JSON.stringify(payload)
+            body: JSON.stringify(payload),
         }
 
         fetch(`/authenticate`, requestOptions)
@@ -58,7 +58,7 @@ const Login = () => {
 
             <form onSubmit={handleSubmit}>
                 <Input
-                    title={"email address"}
+                    title="Email Address"
                     type="email"
                     className="form-control"
                     name="email"
@@ -67,7 +67,7 @@ const Login = () => {
                 />
 
                 <Input
-                    title={"password"}
+                    title="Password"
                     type="password"
                     className="form-control"
                     name="password"
@@ -80,7 +80,7 @@ const Login = () => {
                 <input
                     type="submit"
                     className="btn btn-primary"
-                    value="login"
+                    value="Login"
                 />
             </form>
         </div>

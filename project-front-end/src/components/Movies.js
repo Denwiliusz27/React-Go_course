@@ -6,7 +6,7 @@ const Movies = () => {
 
     useEffect(() => {
         const headers = new Headers();
-        headers.append("Content-type", "application/json")
+        headers.append("Content-Type", "application/json")
 
         const requestOptions = {
             method: "GET",
@@ -34,7 +34,7 @@ const Movies = () => {
                 <thead>
                 <tr>
                     <th>Movie</th>
-                    <th>Release data</th>
+                    <th>Release date</th>
                     <th>Rating</th>
                 </tr>
                 </thead>
